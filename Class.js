@@ -35,3 +35,34 @@ class Book {
 const myBook = new Book("Victore");
 console.log(myBook.writer);
 
+myBook.writer = "Mac";
+
+console.log(myBook.writer);
+
+
+
+
+
+class Thermostat {
+    constructor(temp) {
+        this._temp = temp;
+    }
+
+    get temperature() {
+        return ( 5 / 9 * (this._temp - 32 ));
+    }
+
+    set temperature(newTemp) {
+        this._temp = newTemp;
+    }
+}
+
+
+
+const myTemp = new Thermostat(76);
+
+console.log(myTemp.temperature);
+
+myTemp.temperature = 26;
+
+console.log(myTemp.temperature);
